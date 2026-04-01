@@ -22,6 +22,12 @@ const taskSchema = new mongoose.Schema({
   },
   dueDate: Date,
   completedAt: Date,
+  username: {
+    type: String,
+    required: true,
+    lowercase: true,
+    trim: true,
+  },
 });
 
 const Task = mongoose.model("Task", taskSchema);

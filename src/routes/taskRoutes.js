@@ -14,4 +14,6 @@ router
   .post(taskController.updateTask)
   .delete(taskController.deleteTask);
 
+router.route("/:id/complete").patch(taskController.markTaskComplete);
+
 export default router;

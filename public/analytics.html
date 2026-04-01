@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Analytics Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1>Productivity Analytics</h1>
+
+    <div class="controls">
+        <label>View:</label>
+        <select id="rangeSelect" onchange="loadAnalytics()">
+            <option value="all">All Time</option>
+            <option value="weekly">Weekly</option>
+            <option value="daily">Daily</option>
+        </select>
+    </div>
+
+    <table border="1" id="analyticsTable">
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Total Tasks</th>
+                <th>Completed</th>
+                <th>Total Time Taken (hrs)</th>
+                <th>Completion Rate</th>
+                <th>Avg Time (hrs)</th>
+                <th>Score</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="analytics.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+body {
+    font-family: Arial;
+    max-width: 600px;
+    margin: auto;
+}
+
+.form {
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 8px;
+    margin: 5px 5px 5px 0;
+    width: 30%;
+}
+
+button {
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+.task {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.task input,
+.task select {
+    margin: 5px 0;
+    padding: 5px;
+    width: 100%;
+}
+
+.actions {
+    margin-top: 10px;
+}
+
+.actions button {
+    margin-right: 5px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.top-bar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.top-bar button {
+    padding: 8px 14px;
+    cursor: pointer;
+}
+
+.controls {
+    margin-bottom: 15px;
+}
